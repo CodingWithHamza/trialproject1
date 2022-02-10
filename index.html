@@ -12,24 +12,39 @@
     <h1 id="title">Survey Form Microverse</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
-        <label for="name" id="name-label">Name</label>
-        <input type="text" id="name" required placeholder="full name">
-        <label for="email" id="email-label">Email</label>
-        <input type="email" id="email" required placeholder="Email">
-        <label for="text" id="number-label">Age</label>
-        <input type="number" id="number" min="18" max="30" placeholder="age">
+
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" required placeholder="full name">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" required placeholder="Email">
         </div>
-    <div class="form-group">
-      <p>Which option best describes your current role?</p>
-      <select id="dropdown" name="role" class="form-control" required>
-        <option disabled selected value>Select current role</option>
-        <option value="student">Student</option>
-        <option value="job">Full Time Job</option>
-        <option value="learner">Full Time Learner</option>
-        <option value="preferNo">Prefer not to say</option>
-        <option value="other">Other</option>
-      </select>
-    </div> 
+
+        <div class="form-group">
+            <label for="text" id="number-label">Age</label>
+            <input type="number" id="number" min="18" max="30" placeholder="age">
+        </div>
+
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select qualification</option>
+                <option value="student">Some High School But no degree</option>
+                <option value="job">High School</option>
+                <option value="learner">Some College But no degree</option>
+                <option value="preferNo">College</option>
+                <option value="other">University</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would you recommend Microverse to a friend?</p>
+            <label for="text"><input type="radio"> Yes</label>
+            <label for="text"><input type="radio"> Maybe</label>
+            <label for="text"><input type="radio"> No</label>
+        </div>
+
+
     </form>
 </body>
 
